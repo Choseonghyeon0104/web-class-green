@@ -1,0 +1,106 @@
+html{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Pretendard',sans-serif;
+}
+header{
+    /* border: 2px solid lime; */
+    height: 100px;
+    border-bottom: 2px solid #BE0707;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+
+}
+.inner-frame{
+    /* border: 1px solid red; */
+    width: 1600px;
+    margin: 0 auto;
+}
+header .inner-frame{
+    display: flex;
+    justify-content: space-between;
+}
+header .logo{
+    /* border: 1px solid red; */
+    line-height: 0;
+}
+header .nav{
+    /* border: 1px solid red; */
+}
+.lnb{
+    display: flex;
+    gap: 1rem;
+    /* border: 1px solid green; */
+    height: 30px;
+    align-items: center;
+    font-size: 0.8rem;
+    line-height: 1;
+    text-transform: uppercase;
+    justify-content: flex-end;
+}
+.lnb li{
+    /* border: 1px solid blue; */
+}
+.gnb{
+    /* border: 1px solid red; */
+    display: flex;
+    height: 70px;
+}
+.gnb li{
+    flex: 1;
+    /* border: 1px solid lime; */
+}
+.gnb li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 0.9rem;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+nav{
+    /* border: 1px solid blue; */
+    height: 100px;
+    width: 966px;
+}
+.banner{
+    height: 100vh;
+    background: url(../img/1.jpg) no-repeat 50% 50% / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+.banner h2{
+    width: 1600px;
+    font-size: 7rem;
+    line-height: 0.9;
+    text-transform: uppercase;
+    color: #fff;
+}
+.c1 h3{
+    font-size: 3rem;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.c1 p{
+    line-height: 1.4;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+.sub-banner{
+    height: 441px;
+}
+.sub-banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
