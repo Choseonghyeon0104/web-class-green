@@ -1,0 +1,107 @@
+html{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Pretendard';
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    max-height: 100px;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+header:hover{
+    max-height: 1000px;
+}
+
+.menu{
+    /* height: 100px; */
+    display: flex;
+    justify-content: space-between;
+    width: 1600px;
+    margin: 0 auto;
+}
+.logo{
+    line-height: 0;
+}
+.menu>ul{
+    display: flex;
+    gap: 66px;
+}
+.menu>ul>li>a{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    font-size: 18px;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.menu-2{
+    font-size: 16px;
+    line-height: 1;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 49px;
+}
+.menu-2>li>a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.banner{
+    margin-top: 100px;
+    background: url(../img/18a998569853f0ae11b679e98fe8dedede45c48d.jpg) no-repeat 50% 50% / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    margin-bottom: 1000px;
+}
+.subtype1{
+    color: #fff;
+    font-size: 140px;
+    line-height: 1;
+}
+.menu-3>li a{
+    display: block;
+    margin-top: 20px;
+    color: brown;
+}
+.menu-2>li{
+    max-height: 16px;
+    overflow: hidden;
+    transition: all 1s ease 0s;
+}
+.menu-2>li:hover{
+    max-height: 500px;
+}
+.menu-3>li{
+    transition: all 0.3s ease 0s;
+}
+.menu-3>li:hover{
+    background-color: #dfdfdf;
+}
+.menu>ul>li>a{
+    transition: all 0.05s ease 0s;
+}
+.menu>ul>li>a:hover{
+    transform: scale(1.2);
+    transform: rotate(360deg);
+    background-color: coral;
+    border-radius: 10px;
+}
+.menu-2>li:hover>a{
+    transform: skew(360deg);
+    background-color: rgb(255, 204, 186);
+    border-radius: 3px;
+}

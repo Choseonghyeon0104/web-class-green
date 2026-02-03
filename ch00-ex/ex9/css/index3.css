@@ -1,0 +1,114 @@
+html{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Pretendard',sans-serif;
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 1000;
+    max-height: 100px;
+    /* overflow: hidden; */
+}
+.inner-frame{
+    width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    line-height: 0;
+    font-size: 0;
+}
+.gnb{
+    display: flex;
+}
+.gnb>li{
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    padding: 0 10px ;
+    width: 200px;
+    padding-bottom: 10px;
+    background-color: #fff;
+    max-height: 100px;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+    border-radius: 10px;
+}
+.gnb>li:hover{
+    max-height: 266px;
+    scale: 1.1;
+}
+.lnb>li:hover{
+    transform: scale(1.1);
+}
+.gnb>li>a{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.back{
+    /* display: none; */
+    /* border: 1px solid blue; */
+}
+.back:hover>li{
+    height: auto;
+    overflow: visible;
+    transition: all 0.3s ease 0s;
+}
+.lnb{
+    padding-top: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+.lnb>li>a{
+    display: flex;
+    width: 100% ;
+    height: 100% ;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.e{
+    position: relative;
+    height: 100px;
+}
+.banner video{
+    position: relative;
+    width: 100vw;
+    height: 800px;
+    object-fit: cover;
+    margin-bottom: 1000px;
+}
+.banner .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.banner h1{
+    font-size: 140px;
+    line-height: 1;
+    text-align: center;
+    color: #fff;
+}
+.banner p{
+    font-weight: 500;
+    text-align: center;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 1rem;
+}
