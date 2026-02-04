@@ -1,0 +1,73 @@
+html{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Pretendard';
+}
+header{
+    height: 100px;
+}
+.inner-frame{
+    width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1;
+    text-transform: uppercase;
+}
+.logo{
+    line-height: 0;
+}
+.gnb{
+    display: flex;
+}
+.gnb>li{
+    box-sizing: border-box;
+    width: 200px;
+    padding: 0px 10px 10px;
+    max-height: 100px;
+    overflow: hidden;
+    transition: all 1s ease 0s;
+    background-color: #fff;
+    border-radius: 0 0 5px 5px;
+}
+.gnb>li:hover{
+    max-height: 1000px;
+    z-index: 1000;
+}
+.gnb>li>a{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+.lnb{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
+.banner>video{
+    position: relative;
+    width: 100vw;
+    height: 800px;
+    object-fit: cover;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1;
+}
+.text>h1{
+    font-size: 7rem;
+}
+.text>p{
+    font-weight: 500;
+    margin-top: 1rem;
+}
