@@ -1,0 +1,40 @@
+html{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Pretendard',sans-serif;
+}
+.inner-frame{
+    padding: 75px 0;
+    text-align: center;
+}
+.inner-frame>h1{
+    font-size: 2.5rem;
+    margin:20px 0;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 1;
+}
+.inner-frame>p{
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+.banner{
+    height: 441px;
+    background: url(../img/bannner.jpg) no-repeat 50% 50% / cover;
+    margin: 5rem 0;
+}
+.inner-frame>h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    padding: 0.5rem 0;
+}
+.inner-frame>ul>li{
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+.inner-frame>ul>li:nth-last-of-type{
+    margin-bottom: 0;
+}

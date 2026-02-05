@@ -1,0 +1,42 @@
+html{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Pretendard',sans-serif;
+}
+.banner{
+    height: 559px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/banner.png) no-repeat 50% 50% / cover;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 6rem;
+}
+.inner-frame>h2{
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    line-height: 0.9;
+}
+.inner-frame>p{
+    text-align: end;
+    padding: 1rem 0;
+    border-top: 1px solid #000;
+    line-height: 1.4;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+figure>img{
+    width: 1000px;
+    height: 430px;
+    display: block;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+figcaption{
+    line-height: 1.4;
+    text-transform: lowercase;
+}
+figcaption>b{
+    font-weight: 800;
+}
