@@ -1,0 +1,79 @@
+html{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Pretendard',sans-serif;
+}
+.banner{
+    height: 599px;
+    background: url(../img/bannerbg.png) no-repeat 50% 50% / cover;
+    border-radius: 0 0 150px 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner>h1{
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 1;
+}
+.wrap{
+    background: url(../img/dot-bg.png) repeat-x 50% 55% / 100% 613px;
+}
+.inner-frame .dot{
+    padding-top: 200px;
+    background: url(../img/Vector\ 1.svg) no-repeat 50% -32px / contain;
+}
+.inner-frame h2{
+    font-size: 7.5rem;
+    text-align: center;
+    line-height: 0.9;
+    margin-bottom: 2rem;
+}
+.inner-frame p:nth-of-type(1){
+    text-transform: uppercase;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.inner-frame p:nth-of-type(1)>span{
+    color: #770000;
+}
+.inner-frame figure{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+}
+.inner-frame figure img{
+    display: block;
+    flex: 1;
+    height: 434px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.inner-frame h3{
+    font-size: 2rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+.inner-frame h3>span{
+    color: #770000;
+}
+.inner-frame p:nth-of-type(2){
+    line-height: 1.4;
+    text-transform: lowercase;
+}
+.inner-frame p:nth-of-type(2)>b{
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.inner-frame p:nth-of-type(3){
+    line-height: 1.4;
+    text-transform: lowercase;
+}
+.inner-frame p:nth-of-type(3)>span{
+    font-weight: 700;
+}
+.inner-frame{
+    margin-bottom: 218px;
+}
