@@ -1,0 +1,50 @@
+.a{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin: 200px auto;
+    animation-name: myrotate;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.a:hover{
+    animation-play-state: paused;
+}
+@keyframes myrotate {
+    0%{transform: translateX(-300px) rotate(0deg) ;}
+    100%{transform: translateX(300px) rotate(360deg) ;}
+}
+
+.b{
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    margin: 200px auto;
+    animation: bounce 0.3s ease 0s infinite alternate;
+}
+@keyframes bounce {
+    0%{
+        transform: scale(1);
+        border-radius: 50%;
+    }
+    45.5%{
+        background-color: red;
+        border-radius: 50%;
+    }
+    100%{
+        transform: scale(2);
+        border-radius: 50%;
+    }
+}
+.c{
+    width: 100px;
+    height: 100px;
+    margin: 200px auto;
+    background-color: blue;
+}
+.c:hover{
+    animation: bounce 0.6s ease 0s 1 normal;
+}
