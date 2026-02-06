@@ -5,11 +5,8 @@
     .content h2 {
     font-size: 40px;
     }
-    .content p {
-    margin-bottom: 60px;
-    }
     .content figure img {
-        max-height: 200px;
+    max-height: 200px;
     }
     .content {
     margin: 0 1rem;
