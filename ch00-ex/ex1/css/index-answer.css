@@ -1,43 +1,7 @@
-html{
-    font-size: 20px;
-    font-family: 'Pretendard', sans-serif;
+:root{
+    --base-pc:20px;
+    --base-pad:18px;
+    --base-mo:14px;
 }
-.inner-frame{
-    /* border: 1px solid red; */
-    width: 1440px;
-    margin: 3.75rem auto;
-    text-align: center;
-}
-.inner-frame h1{
-    font-weight: 900;
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    padding: 1rem 0;
-    line-height: 1;
-    /* border: 1px solid red; */
-}
-.desc{
-    margin-bottom: 5rem;
-    /* border: 1px solid red; */
-}
-.banner{
-    height: 441px;
-    /* border: 1px solid red; */
-    background: url(../img/5d106bfeedc73ee72734dc3aeb348f9c8f2b4490.jpg) no-repeat 50% 50% / cover ;
-    margin-bottom: 5rem;
-}
-.inner-frame h2{
-    font-weight: 700;
-    font-size: 1.5rem;
-    line-height: 1;
-    padding: 0.5rem 0;
-    margin-bottom: 1rem;
-}
-.values li{
-    /* border: 1px solid red; */
-    margin-bottom: 0.5rem;
 
-}
-.values li:last-of-type{
-    margin-bottom: 0;
-}
+

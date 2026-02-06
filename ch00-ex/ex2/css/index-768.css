@@ -1,0 +1,18 @@
+@media (max-width:768px){
+    html{
+        font-size: var(--base-mo);
+    }
+    .content h2 {
+    font-size: 40px;
+    }
+    .content p {
+    margin-bottom: 80px;
+    }
+    .content figure img {
+        max-height: 200px;
+    }
+    .content {
+    margin: 0 1rem;
+    margin-top: 6rem;
+}
+}

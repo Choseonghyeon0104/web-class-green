@@ -1,60 +1,11 @@
+:root{
+    --base-pc:20px;
+    --base-pad:18px;
+    --base-mo:14px;
+}
 .aboreto{
   font-family: "Aboreto", system-ui;
   font-weight: 400;
   font-style: normal;
 }
 
-html{
-    font-size: 20px;
-    font-weight: 400;
-    font-family: 'Pretendard', sans-serif;
-}
-
-.banner{
-    /* border: 1px solid red; */
-    height: 599px;
-    background: url(../img/7247350364b9abd890d544b50b85e6093c349f17.png) no-repeat 50% 50% / cover;
-    /* padding-top: 270px;
-    box-sizing: border-box; */
-}
-.banner h1{
-    /* border: 1px solid red; */
-    color: #fff;
-    font-size: 2.5rem;
-    line-height: 1;
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 270px;
-}
-.content{
-    /* border: 1px solid red; */
-    width: 1600px;
-    margin: 0 auto;
-    margin-top: 6rem;
-}
-.content h2{
-    font-size: 4rem;
-    line-height: 0.9;
-    text-transform: uppercase;
-    margin-bottom: 4rem;
-}
-.content p{
-    border-top: 1px solid #000;
-    text-transform: uppercase;
-    text-align: right;
-    line-height: 1.4;
-    padding: 1rem 0;
-    margin-bottom: 3rem;
-}
-.content figure img{
-    /* border: 1px solid red; */
-    width: 1000px;
-    height: 430px;
-    object-fit: cover;
-    margin-bottom: 1rem;
-}
-.content figcaption{
-    font-size: 1rem;
-    line-height: 1.4;
-    text-transform: lowercase;
-}
