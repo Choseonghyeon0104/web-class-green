@@ -1,0 +1,80 @@
+html{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Pretendard",sans-serif;
+    text-transform: uppercase;
+}
+header{
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+.inner-frame{
+    width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    line-height: 0;
+}
+.gnb{
+    display: flex;
+}
+.gnb>li{
+    box-sizing: border-box;
+    padding: 0 0.5rem 0.5rem;
+    width: 200px;
+    max-height: 100px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: all 0.3s ease 0s;
+}
+.gnb>li:hover{
+    max-height: 800px;
+}
+.gnb>li>a{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+}
+.lnb{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+    font-size: 16px;
+    line-height: 1;
+}
+.banner{
+    position: relative;
+}
+.cube{
+    height: 100px;
+}
+.banner>video{
+    width: 100vw;
+    height: 800px;
+    object-fit: cover;
+}
+.text{
+    position: absolute;
+    top: 50%;    
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    color: #fff;
+    line-height: 1;
+}
+.text>h1{
+    font-size: 7rem;
+}
+.text>p{
+    font-weight: 500;
+}
