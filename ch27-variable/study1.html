@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수</title>
+</head>
+<body>
+    <h1>변수</h1>
+    <!-- 변수는 어떠한 값이 저장되는 공간을 의미, 메모리라고 함 -->
+    <p>변할 가능성이 있는 수</p>
+    <script>
+        let a; // a라는 변수를 선언(생성)한다.
+        a = 10  // a라는 변수에 10으로 초기화한다.
+        a + 10
+        console.log(a + 10)
+        console.log(a)
+        a=a+10
+        console.log(a)
+        a+=10 //a=a+10과 동일한 함수
+        console.log(a)
+        let b = 20;
+        b-=2
+        console.log(b)
+        let c = "안녕하세요"
+        // (c[2]+c[4]).length // "하요"의 글자 갯수 -> 2
+        c.length // "안녕하세요"의 글자 갯수 -> 5
+        console.log(Math.max((c[2]+c[4]).length,c.length)) // 2와 5 중에서 큰 수
+        console.log(c.length)
+        console.log(c[2])
+
+        let name = prompt("당신의 이름이 무엇인가요?")
+        document.write("<h3> " + name + "! 안녕! </h3>")
+        let age = prompt(name + "님의 나이는 몇 살이신가요?")
+        document.write("<p>" + name + "님의 나이가 " + age + "살 이군요. 반갑습니다</p>")
+
+    </script>
+    <h1>상수</h1>
+    <p>변하지 않는 수</p>
+    <script>
+        123
+        "정현진"
+    </script>
+</body>
+</html>
