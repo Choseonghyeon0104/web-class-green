@@ -1,72 +1,141 @@
-html{
-    font-size: 20px;
-    font-family: 'Pretendard';
-    font-weight: 400;
+:root{
+    --base-pc:20px;
+    --base-pad:18px;
+    --base-mo:14px;
 }
-.stp1{
-    font-family: "abo";
+@media (max-width:1920px){
+    html{
+        font-size: var(--base-pc);
+        font-family: 'Pretendard';
+        font-weight: 400;
+    }
+    .stp1{
+        font-family: "abo";
+    }
+    .common-frame{
+        width: 1600px;
+        margin: 0 auto;
+        padding-top: 6rem;
+    }
+    .banner{
+        height: 599px;
+        border-radius: 2.5rem;
+        background: url(../img/adb2968ec7a931b51bc30a08b2ab46a3d26b1388\ \(1\).jpg) no-repeat 50% 50% / cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner h1{
+        color: #fff;
+        font-size: 2.5rem;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+    .common-frame h2{
+        margin-top: 6rem;
+        font-size: 7.5rem;
+        line-height: 0.9;
+        text-transform: uppercase;
+    }
+    .desc1{
+        line-height: 1.4;
+        text-transform: uppercase;
+        margin: 2.4rem 0;
+    }
+    .gallery{
+        display: flex;
+        gap: 1rem;
+    }
+    .gallery figure{
+        flex: 1;
+        aspect-ratio: 520/434;
+    }
+    .gallery img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
+    }
+    .common-frame h3{
+        margin: 2rem 0 1rem;
+        font-size: 2rem;
+        line-height: 1.4;
+        text-align: center;
+        text-transform: lowercase;
+    }
+    .common-frame .desc2{
+        line-height: 1.4;
+        text-align: center;
+        text-transform: capitalize;
+        margin-bottom: 2rem;
+    }
+    .gallery.type2 figure{
+        flex: 1;
+        aspect-ratio: 790/434;
+    }
+    .wrap{
+        background: url(../img/bg.svg) no-repeat 50% 0% / 100% auto;
+    }
 }
-.common-frame{
-    width: 1600px;
-    margin: 0 auto;
-    padding-top: 6rem;
+@media (max-width:1024px){
+    html{
+        font-size: var(--base-pad);
+    }
+    .common-frame {
+    width: auto;
+    margin: 0 2rem;
+    }
+    .common-frame h2 {
+    font-size: 80px;
+    }
+    .desc1 {
+    margin: 48px 0;
+    }
+    .gallery figure {
+    aspect-ratio: 1/1;
+    }
+    .gallery.type2 figure {
+    aspect-ratio: 1/1;
+    }
+    .wrap {
+    background: url(../img/bg.svg) no-repeat 50% 50% / 100% auto;
+    }
+    .banner {
+    border-radius: 50px;
+    }
+    .gallery img {
+    border-radius: 20px;
+    }
 }
-.banner{
-    height: 599px;
-    border-radius: 2.5rem;
-    background: url(../img/adb2968ec7a931b51bc30a08b2ab46a3d26b1388\ \(1\).jpg) no-repeat 50% 50% / cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.banner h1{
-    color: #fff;
-    font-size: 2.5rem;
-    line-height: 1;
-    text-transform: uppercase;
-}
-.common-frame h2{
-    margin-top: 6rem;
-    font-size: 7.5rem;
-    line-height: 0.9;
-    text-transform: uppercase;
-}
-.desc1{
-    line-height: 1.4;
-    text-transform: uppercase;
-    margin: 2.4rem 0;
-}
-.gallery{
-    display: flex;
-    gap: 1rem;
-}
-.gallery figure{
-    flex: 1;
-    aspect-ratio: 520/434;
-}
-.gallery img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 1rem;
-}
-.common-frame h3{
-    margin: 2rem 0 1rem;
-    font-size: 2rem;
-    line-height: 1.4;
-    text-align: center;
-    text-transform: lowercase;
-}
-.common-frame .desc2{
-    line-height: 1.4;
-    text-align: center;
-    text-transform: capitalize;
-    margin-bottom: 2rem;
-}
-.gallery.type2 figure{
-    flex: 1;
-    aspect-ratio: 790/434;
-}
-.wrap{
-    background: url(../img/bg.svg) no-repeat 50% 0% / 100% auto;
+@media (max-width:768px){
+    html{
+        font-size: var(--base-mo);
+    }
+    .common-frame {
+    margin: 1rem;
+    }
+    .common-frame h2 {
+    font-size: 50px;
+    }
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    .gallery figure:nth-of-type(1),
+    .gallery figure:nth-of-type(2){
+        aspect-ratio: 175/150;
+    }
+    .gallery figure:nth-of-type(3){
+        grid-column: 1/3;
+        aspect-ratio: 365/150;
+    }
+    .gallery.type2{
+        display: flex;
+        flex-direction: column;
+    }
+    .gallery.type2 figure{
+        height: 1px;
+        aspect-ratio: 365/150;
+    }
 }
