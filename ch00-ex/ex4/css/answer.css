@@ -1,17 +1,18 @@
 :root{
+    --base-wide1:22px;
     --base-pc:20px;
     --base-pad:18px;
     --base-mo:14px;
 }
-@media (max-width:1920px){
-    html{
-        font-size: var(--base-pc);
+.stp1{
+    font-family: "abo";
+    }
+html{
+        font-size: 20px;
         font-family: 'Pretendard';
         font-weight: 400;
     }
-    .stp1{
-        font-family: "abo";
-    }
+    
     .common-frame{
         width: 1600px;
         margin: 0 auto;
@@ -75,36 +76,50 @@
     }
     .wrap{
         background: url(../img/bg.svg) no-repeat 50% 0% / 100% auto;
+    }    
+@media (max-width:3840px){
+    html{
+        font-size: var(--base-wide1);
+        font-family: 'Pretendard';
+        font-weight: 400;
     }
+}
+@media (max-width:1920px){
+    html{
+        font-size: var(--base-pc);
+        font-family: 'Pretendard';
+        font-weight: 400;
+    }
+    
 }
 @media (max-width:1024px){
     html{
         font-size: var(--base-pad);
     }
     .common-frame {
-    width: auto;
-    margin: 0 2rem;
+        width: auto;
+        margin: 0 2rem;
     }
     .common-frame h2 {
-    font-size: 80px;
+        font-size: 4.4rem;
     }
     .desc1 {
-    margin: 48px 0;
+        margin: 48px 0;
     }
     .gallery figure {
-    aspect-ratio: 1/1;
+        aspect-ratio: 1/1;
     }
     .gallery.type2 figure {
-    aspect-ratio: 1/1;
+        aspect-ratio: 1/1;
     }
     .wrap {
-    background: url(../img/bg.svg) no-repeat 50% 50% / 100% auto;
+        background: url(../img/bg.svg) no-repeat 50% 50% / 100% auto;
     }
     .banner {
-    border-radius: 50px;
+        border-radius: 50px;
     }
     .gallery img {
-    border-radius: 20px;
+        border-radius: 20px;
     }
 }
 @media (max-width:768px){
@@ -112,15 +127,14 @@
         font-size: var(--base-mo);
     }
     .common-frame {
-    margin: 1rem;
+        margin: 0 1rem;
     }
     .common-frame h2 {
-    font-size: 50px;
+        font-size: 3.6rem;
     }
     .gallery{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        
     }
     .gallery figure:nth-of-type(1),
     .gallery figure:nth-of-type(2){
@@ -138,4 +152,12 @@
         height: 1px;
         aspect-ratio: 365/150;
     }
+
+    /* .gallery figure{
+        flex:initial
+        width: calc((100%-1rem)/2);
+    }
+    .gallery figure:nth-last-of-type{
+        width: 100%;
+    } */
 }
