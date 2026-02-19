@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문-for</title>
+</head>
+<body>
+    <h1>반복문</h1>
+    <p>조건이 참으로 계산되는 동안 소스코드를 반복하는 문법 구조</p>
+    <script>
+        // for(조건){반복될 소스 코드} for은 반복이 시작된다는 의미
+        // ++은 기존 값에 1을 더해서 저장한다는 뜻
+        // 사용자에게 원하는 구구단수를 입력하게 한 후 구구단이 출력될 수 있도록 소스코드를 바꿔보시오
+        // for ([초기문]; [조건문]; [증감문])
+        let dan = Number(prompt("몇 단을 출력할까요?"))
+        for(let i=1 ; i<=9 ; i++){
+            document.write(`
+                <li>${dan}X${i}=${i*dan}</li>
+            `)
+        }
+
+        let myclass = ["장윤서","이은지","김민지","조성현","김선영"]
+    </script>
+    <ul>
+        <script>
+            for(let i=0 ; i<myclass.length ; i++){
+                document.write(`<li>${myclass[i]}</li>`)        
+            }
+        </script>
+    </ul>
+</body>
+</html>

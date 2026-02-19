@@ -1,90 +1,134 @@
-html{
-    font-family: "Pretendard", sans-serif;
-    font-weight: 400;
-    font-size: 20px;
+:root{
+    --base-pc:20px;
+    --base-tab:18px;
+    --base-mo:14px;
 }
-.common-frame{
-    width: 1600px;
-    margin: 0 auto;
-    /* border: 1px solid red; */
-}
-.stp1{
-    font-family: 'aboreto';
-}
-.title{
-    /* border: 1px solid red; */
-    padding-top: 8rem;
-    margin-bottom: 1rem;
-    text-align: center;
-    font-size: 2.5rem;
-    line-height: 1;
-    text-transform: uppercase;
-}
-.title+p{
-    line-height: 1.4;
-    text-transform: uppercase;
-    text-align: center;
-}
-.banner{
-    margin-top: 5rem;
-    background: url(../img/1.jpg) no-repeat 50% 50% / cover;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    height: 700px;
-    margin-bottom: 5rem;
-}
-.banner h2{
-    width: 1600px;
-    font-size: 7.5rem;
-    line-height: 0.9;
-    text-transform: uppercase;
-    color: #fff;
-}
-.title2{
-    font-size: 2rem;
-    text-transform: lowercase;
-    line-height: 1.4;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-.title2+p{
-    line-height: 1.4;
-    text-align: center;
-    margin-bottom: 3.5rem;
-}
+@media(max-width:1920px){
+    html{
+        font-family: "Pretendard", sans-serif;
+        font-weight: 400;
+        font-size: var(--base-pc);
+    }
+    .common-frame{
+        width: 1600px;
+        margin: 0 auto;
+        /* border: 1px solid red; */
+    }
+    .stp1{
+        font-family: 'aboreto';
+    }
+    .title{
+        /* border: 1px solid red; */
+        padding-top: 8rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        font-size: 2.5rem;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+    .title+p{
+        line-height: 1.4;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .banner{
+        margin-top: 5rem;
+        background: url(../img/1.jpg) no-repeat 50% 50% / cover;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        height: 700px;
+        margin-bottom: 5rem;
+    }
+    .banner h2{
+        width: 1600px;
+        font-size: 7.5rem;
+        line-height: 0.9;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .title2{
+        font-size: 2rem;
+        text-transform: lowercase;
+        line-height: 1.4;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .title2+p{
+        line-height: 1.4;
+        text-align: center;
+        margin-bottom: 3.5rem;
+    }
 
-.gallery{
-    display: flex;
-    gap: 1rem;
+    .gallery{
+        display: flex;
+        gap: 1rem;
+    }
+    .gallery>li{
+        flex:1;
+    }
+    .gallery figure{
+        aspect-ratio: 1/1;
+        line-height: 0;
+        margin-bottom: 1rem;
+    }
+    .gallery figure img{
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem;
+        object-fit: cover;
+    }
+    .gallery h4{
+        font-weight: 700;
+        line-height: 1.4;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        text-transform: capitalize;
+    }
+    .gallery h4+p{
+        line-height: 1.4;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-all;
+    }
 }
-.gallery>li{
-    flex:1;
+@media(max-width:1024px){
+      html{
+        font-size: var(--base-tab);
+    }
+    .common-frame {
+    width: auto;
+    margin: 0 2rem;
+    }
+    .banner h2 {
+    width: auto;
+    margin: 0 1rem;
+    font-size: 4.5rem;
+    }
+    .banner {
+    height: 600px;
+    }
 }
-.gallery figure{
-    aspect-ratio: 1/1;
-    line-height: 0;
-    margin-bottom: 1rem;
-}
-.gallery figure img{
-    width: 100%;
-    height: 100%;
-    border-radius: 1rem;
-    object-fit: cover;
-}
-.gallery h4{
-    font-weight: 700;
-    line-height: 1.4;
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-    text-transform: capitalize;
-}
-.gallery h4+p{
-    line-height: 1.4;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    word-break: break-all;
+@media(max-width:768px){
+    html{
+        font-size: var(--base-mo);
+    }
+      .common-frame {
+    margin: 0 1rem;
+    }
+    .banner {
+    align-items: center;
+    height: 500px;
+    }
+    .banner h2 {
+    font-size: 3.5rem;
+    text-align: center;
+    }
+    .gallery {
+    gap: 2rem;
+    flex-direction: column;
+    }
 }
