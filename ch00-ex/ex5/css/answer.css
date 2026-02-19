@@ -96,7 +96,7 @@
     }
 }
 @media(max-width:1024px){
-      html{
+    html{
         font-size: var(--base-tab);
     }
     .common-frame {
