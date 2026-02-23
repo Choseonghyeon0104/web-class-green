@@ -1,8 +1,10 @@
 :root{
     --base-pc:20px;
     --base-tab:18px;
-    --base-mo:14px;
+    --base-mobile:14px;
 }
+@media(max-width:5120px){}
+@media(max-width:3840px){}
 @media(max-width:1920px){
     html{
         font-family: "Pretendard", sans-serif;
@@ -105,29 +107,30 @@
     }
     .banner h2 {
     width: auto;
-    margin: 0 1rem;
-    font-size: 4.5rem;
+    margin: 0 2rem;
+    font-size: 4.4rem;
     }
-    .banner {
+    .banner{
     height: 600px;
     }
 }
 @media(max-width:768px){
     html{
-        font-size: var(--base-mo);
+        font-size: var(--base-mobile);
     }
-      .common-frame {
+    .common-frame{
     margin: 0 1rem;
     }
-    .banner {
+    .banner{
     align-items: center;
     height: 500px;
     }
-    .banner h2 {
+    .banner h2{
     font-size: 3.5rem;
+    margin: 0 1rem;
     text-align: center;
     }
-    .gallery {
+    .gallery{
     gap: 2rem;
     flex-direction: column;
     }
