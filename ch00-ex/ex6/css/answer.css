@@ -1,49 +1,86 @@
-html{
-    font-size: 20px;
-    font-family: 'Pretendard',sans-serif;
-    font-weight: 400;
+:root{
+    --base-pc:20px;
+    --base-tab:18px;
+    --base-mobile:14px
 }
-header{
-    border-bottom: 2px solid red;
+@media (max-width:1920px){
+    .menu-logo{display: none;}
+    html{
+        font-size: var(--base-pc);
+        font-family: 'Pretendard',sans-serif;
+        font-weight: 400;
+    }
+    header{
+        border-bottom: 2px solid red;
+    }
+    .common-frame{
+        /* border: 1px solid red; */
+        width: 1600px;
+        margin: 0 auto;
+    }
+    header .common-frame{
+        display: flex;
+        justify-content: space-between;
+    }
+    .gnb{
+        display: flex;
+        /* border: 1px solid red; */
+    }
+    .gnb li{
+        /* border: 1px solid blue; */
+    }
+    .gnb li a{
+        display: flex;
+        /* border: 2px solid gold; */
+        height: 100%;
+        align-items: center;
+        padding: 0  1rem;
+        font-weight: 600;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+    .banner{
+        /* border: 1px solid red; */
+        height: 700px;
+        background: url(../img/1.jpg) no-repeat 50% 50% / cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner h1{
+        font-size: 7.5rem;
+        line-height: 1;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+    }
 }
-.common-frame{
-    /* border: 1px solid red; */
-    width: 1600px;
-    margin: 0 auto;
+@media (max-width:1024px){
+    html{
+        font-size: var(--base-tab);
+    }
+    .logo{
+        height: 90px;
+        min-width: 90px;
+    }
+    .logo>img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .common-frame {
+        /* border: 1px solid red; */
+        width: auto;
+        margin: 0 2rem;
+    }
+    .banner h1 {
+        font-size: 4.4rem;
+    }
+    .banner {
+        height: 600px;
+    }
 }
-header .common-frame{
-    display: flex;
-    justify-content: space-between;
-}
-.gnb{
-    display: flex;
-    /* border: 1px solid red; */
-}
-.gnb li{
-    /* border: 1px solid blue; */
-}
-.gnb li a{
-    display: flex;
-    /* border: 2px solid gold; */
-    height: 100%;
-    align-items: center;
-    padding: 0  1rem;
-    font-weight: 600;
-    line-height: 1;
-    text-transform: uppercase;
-}
-.banner{
-    /* border: 1px solid red; */
-    height: 700px;
-    background: url(../img/1.jpg) no-repeat 50% 50% / cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.banner h1{
-    font-size: 7.5rem;
-    line-height: 1;
-    text-align: center;
-    text-transform: uppercase;
-    color: #fff;
+@media (max-width:768px){
+    .menu-logo{display: visible;}
+    .gnb{display: none;}
 }
