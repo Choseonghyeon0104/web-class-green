@@ -1,0 +1,96 @@
+html{
+    font-size: 20px;
+    font-weight: 400;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom:2px solid #BE0707 ;
+}
+header>.inner-frame{
+    width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    line-height: 0;
+}
+.logo>a{
+    width: 100%;
+    height: 100%;
+}
+.gnb{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1;
+}
+.gnb>.list-1{
+    display: flex;
+    gap: 1rem;
+    font-size: 0 .8rem;
+    height: 30px;
+    justify-content: flex-end;
+}
+.gnb>.list-1>li>a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.gnb>.list-2{
+    display: flex;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.gnb>.list-2>li{
+    width: 138px;
+    height: 70px;
+}
+.gnb>.list-2>li>a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner{
+    height: 963px;
+    background: url(../img/1.jpg) no-repeat 50% 50% / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+.banner>h1{
+    width: 1600px;
+    font-size: 7rem;
+    line-height: 0.9;
+    color: #fff;
+}
+.inner-frame{
+    width: 1600px;
+    margin: 0 auto;
+}
+.inner-frame>h2{
+    font-size: 3rem;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.inner-frame>p{
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 4rem;
+}
+.inner-frame>img{
+    width: 100%;
+    height: 441px;
+    object-fit: cover;
+}
