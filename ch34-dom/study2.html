@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+</head>
+<body>
+    <h1>제목1</h1>
+    <p class="a">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus sunt quam possimus amet, mollitia facere, quaerat ea quasi ipsa necessitatibus, hic aperiam sequi. Illum iure fugit consequuntur qui cumque similique?</p>
+    <p class="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, praesentium amet! Fugiat velit temporibus facere tenetur optio totam nesciunt suscipit, ex unde, corporis mollitia iusto, aspernatur beatae quo expedita doloremque.</p>
+    <p class="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi esse iure eum hic sequi dolorem aut, repudiandae voluptatum fugiat laudantium optio non rem, dolorum perspiciatis blanditiis velit molestiae sunt quod.</p>
+    <script>
+        let h1tag = document.querySelector("h1")
+        h1tag.style.color = "red"
+        h1tag.style.fontSize = "80px"
+        h1tag.style.textDecoration = "underline"
+
+        let ptag = document.querySelectorAll(".a") // [{},{},{}]
+        // ptag[0].style.color = "green"
+        // ptag[1].style.color = "green"
+        // ptag[2].style.color = "green"
+        // for(let i=0 ; i<=ptag.length ; i++){
+        //     ptag[i].style.color = "green"
+        // }
+        ptag.forEach(function(tag){
+            tag.style.color = "red"
+        })
+        ptag.forEach(tag=>{tag.style.color = "blue"})
+    </script>
+</body>
+</html>
