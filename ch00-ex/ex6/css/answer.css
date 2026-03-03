@@ -3,6 +3,9 @@
     --base-tab:18px;
     --base-mobile:14px
 }
+.hiddenGnb{
+    display: none;
+}
 .logo{
     width: 5rem;
     height: 5rem;
@@ -104,6 +107,45 @@ header .common-frame{
     }
 }
 @media(max-width:900px){
+    .hiddenGnb{
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1rem;
+        transform: translate(100%);
+        transition: all 0.5s ease 0s;
+        z-index: 1000;
+    }
+    .hiddenGnb.on{
+        transform: translate(0%);
+    }
+    .hdTop{
+        border-bottom: 1px solid #000;
+    }
+    .hdTop>.common-frame{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hdBot>.common-frame{
+        margin-top: 1rem ;
+    }
+    .hdBot>.common-frame>ul>li{
+        padding: 1rem 0;
+        border-bottom:1px solid #00000017;
+    }
+
+
+
+
+
+
     header{
         display: none;
     }
