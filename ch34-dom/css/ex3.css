@@ -1,0 +1,45 @@
+*{
+    margin:0;padding:0;
+}
+.tab-menu{
+    width:800px;
+    margin:50px auto;
+}
+.tabs{
+    display: flex;
+    gap:1rem;
+}
+.tabs span{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.12);
+    text-transform: uppercase;
+    font-size: .8rem;
+    padding:.2rem 1.2rem;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.tabs span:hover{
+    background: #000;
+    color: #fff;
+}
+.tabs span.active{
+    background: #000;
+    color: #fff;
+}
+.tab-descriptions{
+    margin-top: 2rem;
+    display: flex;
+    gap:1rem;
+}
+.tab-descriptions section{
+    /* display: none; */
+    flex:0;
+    border:1px solid #000;
+    padding:1rem;
+    opacity: 0.2;
+    transition:all 1s ease 0s
+}
+.tab-descriptions section.active{
+    flex:1;
+    /* display: block; */
+    opacity: 1;
+}
