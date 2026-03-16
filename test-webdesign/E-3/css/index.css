@@ -1,0 +1,174 @@
+@charset "utf-8";
+
+*{padding: 0; margin: 0;}
+img{max-width: 100%;}
+ul{list-style: none;}
+a{text-decoration: inherit; color: inherit;}
+
+html{
+    background-color: #fff;
+    color: #333;
+}
+
+.popup{
+    width: 300px;
+    position: fixed;
+    top: 300px;
+    left: 300px;
+    background-color: #fff;
+    padding: 30px;
+    display: none;
+    z-index: 1000;
+}
+.popup h3{margin-bottom: 20px;}
+.popup-ctl{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-close{cursor: pointer;}
+.popup.on{display: block;}
+
+
+
+
+.container{
+    display: flex;
+}
+header{
+    background-color: bisque;
+    width: 200px;
+}
+
+.gnb{
+    width: 180px;
+    margin: 0 auto;
+}
+.gnb a{
+    display: flex;
+    align-items: center;
+    width: 180px;
+    height: 50px;
+}
+.gnb li{
+    position: relative;
+}
+.gnb>li>a{
+    border-bottom: 1px solid red;
+}
+.gnb ul{
+    position: absolute;
+    top: 0;
+    left: 180px;
+    background-color: rgba(51, 51, 51, 0.637);
+    color: #fff;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease 0s;
+}
+.gnb>li:hover>a{
+    background-color: beige;
+}
+.gnb ul li:hover a{
+    background-color: #fff;
+    color: #000;
+}
+.gnb li:hover ul{
+    opacity: 1;
+    pointer-events: initial;
+}
+main{
+    flex-grow: 1;
+}
+.spot{
+    display: flex;
+    font-size: 0.8rem;
+    gap: 0.5rem;
+    justify-content: center;
+    text-decoration: underline;
+}
+main{
+    display: flex;
+}
+.content{
+    width: 400px;
+}
+.banner{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.banner figure{
+    width: 100px;
+    flex-shrink: 0;
+    align-self: flex-start;
+}
+.banner a{
+    width: 30px;
+    flex-shrink: 0;
+}
+.content section{
+    padding: 10px;
+    box-sizing: border-box;
+}
+.notice li{
+    display: flex;
+    justify-content: space-between;
+}
+.gallery{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.gallery a{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.station{
+    height: 870px;
+    flex-grow: 1;
+    overflow: hidden;
+}
+.train{
+    width: 100%;
+    height: 300%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.7s ease 0s;
+}
+.train li{
+    line-height: 0;
+    flex: 1;
+}
+.train li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+footer{
+    display: flex;
+    height: 100px;
+    background-color: #333;
+    color: #fff;
+    align-items: center;
+}
+.foot-logo{
+    width: 200px;
+}
+.copy{
+    flex-grow: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.sns{
+    width: 200px;
+    display: flex;
+    gap: 10px;
+}
