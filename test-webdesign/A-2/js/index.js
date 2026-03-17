@@ -35,8 +35,7 @@ document.addEventListener("DOMContentLoaded",()=>{
                 train.style.transform = `translateX(0%)`
                 count=0
             },800)
-            
         }
-    }, 2500);
+    }, 1500);
 
 })
