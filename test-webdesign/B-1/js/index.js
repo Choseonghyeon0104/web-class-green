@@ -7,12 +7,11 @@ document.addEventListener("DOMContentLoaded",()=>{
     setInterval(()=>{
         
         count++
+        if(count>2){count=0
+            // slide.style.transform=(`translateX(0%)`)
+        }
         slide.style.transform=(`translateX(${-33.33*count}%)`)
         slide.style.transition=(`all 0.5s ease 0s`)
-        if(count>2){
-            count=0
-            slide.style.transform=(`translateX(0%)`)
-        }
 
     },1000)
 
