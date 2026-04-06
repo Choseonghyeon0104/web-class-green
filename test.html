@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Parallax Cloud Portfolio</title>
+    <style>
+        /* [1단계: 기본 스타일 및 레이아웃] */
+        body, html { 
+            margin: 0; padding: 0; width: 100%; height: 100%; 
+            background: #1a2a44; font-family: 'Pretendard', sans-serif; color: white; 
+            scroll-behavior: smooth; /* 부드러운 스크롤 */
+        }
+
+        /* 히어로 섹션 (구름 고정) */
+        #cloud-background {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100vh;
+            display: flex; align-items: center; justify-content: center;
+            z-index: 1;
+            will-change: filter, opacity;
+        }
+
+        .hero-content {
+            text-align: center;
+            z-index: 10;
+            pointer-events: none;
+        }
+
+        h1 { font-size: 6rem; margin: 0; letter-spacing: -3px; font-weight: 900; }
+
+        /* [2단계: 스크롤 섹션 구성] */
+        /* 스페이서: 히어로 섹션이 보여질 투명한 공간 */
+        .spacer { height: 100vh; position: relative; z-index: 2; pointer-events: none; }
+
+        /* 공통 섹션 스타일 */
+        .section {
+            position: relative;
+            z-index: 3;
+            padding: 150px 20px;
+            min-height: 80vh;
+            display: flex; align-items: center; justify-content: center;
+        }
+
+        .container { max-width: 900px; width: 100%; margin: 0 auto; }
+
+        /* 섹션 2: 프로젝트 (불투명 배경) */
+        .section-two { background: white; color: #111; }
+        
+        /* 섹션 3: 새로 추가된 섹션 (진한 배경) */
+        .section-three { background: #111; color: white; border-top: 1px solid #333; }
+
+        .card {
+            background: rgba(0,0,0,0.05); padding: 40px; border-radius: 20px; margin-bottom: 20px;
+        }
+        .section-three .card { background: rgba(255,255,255,0.05); }
+
+    </style>
+</head>
+<body>
+
+    <div id="cloud-background">
+        <div class="hero-content" id="hero-text">
+            <h1>CLOUD CORE</h1>
+            <p style="font-size: 1.5rem; opacity: 0.7;">Scroll to see the transition</p>
+        </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <section class="section section-two">
+        <div class="container">
+            <h2 style="font-size: 3rem;">SELECTED WORKS</h2>
+            <div class="card">
+                <h3>Project 01</h3>
+                <p>스크롤을 내리면 구름 배경이 블러 처리되며 자연스럽게 이 섹션이 위로 올라옵니다.</p>
+            </div>
+            <div class="card">
+                <h3>Project 02</h3>
+                <p>CSS의 z-index와 JS의 Scroll 이벤트를 결합한 패럴랙스 기법입니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-three">
+        <div class="container" style="text-align: center;">
+            <h2 style="font-size: 3rem;">GET IN TOUCH</h2>
+            <p>배경이 완전히 사라진 뒤 나타나는 최종 섹션입니다.</p>
+            <div class="card" style="display: inline-block; min-width: 300px;">
+                <p>Email: hello@example.com</p>
+                <p>Instagram: @creative_cloud</p>
+            </div>
+            <footer style="margin-top: 100px; opacity: 0.3;">© 2026 Cloud Portfolio. All rights reserved.</footer>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
+
+    <script>
+        // --- VANTA 구름 배경 초기화 ---
+        const vantaEffect = VANTA.CLOUDS({
+            el: "#cloud-background",
+            mouseControls: true, touchControls: true,
+            backgroundColor: 0x1a2a44, skyColor: 0x68b8d7, cloudColor: 0xadc1de,
+            speed: 1.0
+        });
+
+        // --- 패럴랙스 및 블러 인터랙션 ---
+        const heroBg = document.getElementById('cloud-background');
+        const heroText = document.getElementById('hero-text');
+
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            const vh = window.innerHeight;
+            
+            // 0 ~ 1 사이의 스크롤 비율 (첫 번째 화면 기준)
+            let ratio = Math.min(scrollY / vh, 1);
+
+            // 1. 블러: 0px에서 25px까지 증가
+            heroBg.style.filter = `blur(${ratio * 25}px)`;
+            
+            // 2. 투명도: 1에서 0으로 감소
+            heroBg.style.opacity = 1 - ratio;
+
+            // 3. 텍스트 패럴랙스: 글자가 배경보다 천천히 위로 올라감 (속도 0.4배)
+            heroText.style.transform = `translateY(${scrollY * 0.4}px)`;
+
+            // 성능 최적화: 완전히 안 보일 때는 렌더링 중지 지시
+            if (ratio >= 1) {
+                heroBg.style.display = 'none';
+            } else {
+                heroBg.style.display = 'flex';
+            }
+        });
+    </script>
+</body>
+</html>
